@@ -1,0 +1,325 @@
+@import url("https://fonts.cdnfonts.com/css/valorant");
+
+:root,
+* {
+  font-family: "VALORANT", sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+body {
+  background-color: #ddd;
+}
+
+.playerCard {
+  display: flex;
+  /* border: 1px solid red; */
+  padding: 1rem 1rem 0 1rem;
+  margin: 1rem;
+  width: 100%;
+  background-color: #111;
+  font-family: "VALORANT", sans-serif;
+  color: white;
+}
+
+.playerCard img {
+  width: 50%;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  align-items: center;
+}
+
+.roleSection {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.roleSection img {
+  height: 3rem;
+  margin-right: 1rem;
+  margin-top: -1.5rem;
+}
+
+.roleOuter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.oneAbility img {
+  height: 5rem;
+  margin: 2rem 2rem 0 0;
+}
+
+.oneAbility h3 {
+  font-size: 1.6rem;
+  border-bottom: 1px solid gray;
+}
+
+.oneAbility p {
+  font-size: 0.8rem;
+}
+
+.oneAbility {
+  display: flex;
+}
+
+.abilitySec {
+  width: 60%;
+  margin: auto;
+}
+
+.abiHead {
+  margin: 2rem 0 1rem;
+}
+
+.fullPic {
+  height: 40rem;
+  width: auto;
+  z-index: 100;
+}
+
+.detdet {
+  margin-left: -4rem;
+  padding-right: 2rem;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.designPic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  height: 40rem;
+}
+
+.resetLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.resetLink:hover {
+  color: red;
+}
+
+.mapCardCard {
+  display: flex;
+  /* border: 1px solid red; */
+  width: 100%;
+  color: white;
+  flex-direction: column;
+  background-color: #111;
+  overflow: hidden;
+}
+
+.mapCardCard img {
+  width: 100%;
+  object-fit: cover;
+  transform: scale(1.3);
+  object-position: 0 -5px;
+}
+.mapCardCard h2 {
+  width: 200%;
+  padding: 1rem;
+}
+
+.MapCard {
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mynav {
+  justify-content: end;
+}
+
+.dropit {
+  padding: 0.4rem;
+  font-family: "Courier New", Courier, monospace;
+}
+
+select {
+  min-width: 300px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  padding: 10px 14px;
+  appearance: none;
+  background-color: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  transition: all 0.3s;
+}
+
+select:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(30, 144, 255, 0.3);
+  border-color: rgba(30, 144, 255, 0.3);
+}
+
+option {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  background-color: #fff;
+}
+
+.Home {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.Home .lekha {
+  margin-left: 4rem;
+  margin-top: -12rem;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.Home span {
+  font-size: 6rem;
+  margin: -2rem 0;
+  padding: 0;
+}
+
+.Home {
+  background-image: url("./assets/cyph.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.space {
+  width: 2rem;
+}
+
+.copycopy {
+  background-color: #111;
+  color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.gunCardCard {
+  display: flex;
+  /* border: 1px solid red; */
+  width: 100%;
+  color: white;
+  background-color: #111;
+  overflow: hidden;
+  height: 6rem;
+}
+
+.gunCardCard img {
+  object-fit: contain;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.gunCardCard h3 {
+  padding: 1rem;
+}
+
+.gunskins h3 {
+  border-bottom: 1px solid #222;
+  font-size: 1.4rem;
+}
+
+.moron {
+  border: 1px solid red;
+  background-color: blue;
+}
+
+.helloLast {
+  border-radius: 0;
+  outline: none;
+}
+
+@media (max-width: 900px) {
+  .fullPic {
+    height: 30rem;
+  }
+
+  .designPic {
+    height: 30rem;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .abilitySec {
+    width: 90%;
+    margin: auto;
+  }
+
+  .detdet {
+    margin-left: 0;
+    width: 90%;
+  }
+
+  .playerCard {
+    margin: 0.5rem 1rem;
+  }
+
+  .gunCardCard {
+    margin-left: 0.8rem;
+  }
+
+  .Home .lekha {
+    margin-left: 2rem;
+    margin-top: -16rem;
+    font-size: 3rem;
+  }
+
+  .Home span {
+    font-size: 5rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 576px) {
+  .fullPic {
+    height: 25rem;
+  }
+
+  .designPic {
+    height: 25rem;
+  }
+
+  .hero {
+    margin-left: 4rem;
+  }
+
+  .detdet {
+    margin-left: -2rem;
+    width: 90%;
+  }
+
+  .Home .lekha {
+    margin-left: 1rem;
+    margin-top: -16rem;
+    font-size: 2.6rem;
+  }
+
+  .Home span {
+    font-size: 5rem;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+  }
+}
